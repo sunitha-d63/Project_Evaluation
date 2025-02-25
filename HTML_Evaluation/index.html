@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body>
+    <div class="container-1">
+        <h2>1:Survey Form</h2>
+        <form>
+            <fieldset id="fieldset">
+                <legend>Survey Form</legend>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name"><br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"><br><br>
+
+                <label for="DOB">Date of Birth</label>
+                <input type="date" name="DOB" id="DOB"><br><br>
+
+                <label for="text">Gender:</label>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+                <input type="radio" id="other" name="gender" value="other">
+                <label for="other">Other</label><br><br>
+
+                <label for="text">Courses:</label>
+                <input type="checkbox" id="sports" name="Courses" value="HTML">
+                <label for="HTML">HTML</label>
+                <input type="checkbox" id="music" name="Courses" value="CSS">
+                <label for="CSS">CSS</label>
+                <input type="checkbox" id="reading" name="Courses" value="JAVASCRIPT">
+                <label for="JAVASCRIPT">JAVASCRIPT</label><br><br>
+
+                <label for="comments">Additional Comments:</label><br>
+                <textarea id="textarea" name="comments"></textarea><br><br>
+
+                <button type="submit">Submit</button>&nbsp;&nbsp;
+                <button type="submit">Reset</button>
+            </fieldset>
+        </form>
+    </div>
+
+    <div class="container-2">
+        <h2>2:Restaurant Menu</h2>
+        <table id="menulist">
+            <caption id="menucaption">Menu</caption>
+            <thead>
+                <tr>
+                    <th>Category</th>
+                    <th>Item Name</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Fast Food</td>
+                    <td>Sandwiches</td>
+                    <td>$500</td>
+                </tr>
+                <tr>
+                    <td>Starters</td>
+                    <td>Garlic Bread</td>
+                    <td>$400</td>
+                </tr>
+                <tr>
+                    <td>Veg</td>
+                    <td>Meals</td>
+                    <td>$150</td>
+                </tr>
+                <tr>
+                    <td>Non-veg</td>
+                    <td>Chicken Fry</td>
+                    <td>$500</td>
+                </tr>
+                <tr>
+                    <td>Dessert</td>
+                    <td>cake</td>
+                    <td>$200</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="container-3">
+        <h2>3:Contact Us</h2>
+        <form id="contact-form">
+            <p>
+                <label for="fname">First Name:</label>
+                <input type="text" id="fname" name="fname"><br>
+            </p><br>
+            <p>
+                <label for=" lname">Last Name:</label>
+                <input type="text" id="lname" name="lname"><br>
+            </p><br>
+            <p>
+                <label for="Address">Address:</label>
+                <input type="text" id="Address" name="Address"><br>
+            </p><br>
+            <p>
+                <label for="email">Email Id:</label>
+                <input type="email" id="email" name="email"><br>
+            </p><br>
+            <p>
+                <label for="number">Mobile Number:</label>
+                <input type="number" id="number" name="number"><br><br>
+            </p><br>
+            <button type="submit">Submit</button>&nbsp;&nbsp;
+            <button type="submit">Reset</button>
+
+        </form>
+    </div>
+
+    <div class="container-4">
+        <h2>4:Travel Agency Booking Form</h2>
+        <form id="Bookform">
+            <fieldset id="travelform">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name"><br><br>
+
+                    <label for="number">Number:</label>
+                    <input type="number" id="number" name="number"><br><br>
+
+                </fieldset>
+
+                <fieldset>
+                    <legend>Travel Details</legend>
+                    <label for="Landmark">Landmark:</label>
+                    <input type="text" id="Landmark" name="Landmark"><br><br>
+
+                    <label for="destination">Destination:</label>
+                    <input type="text" id="destination" name="destination"><br><br>
+
+                    <label for="date">Date:</label>
+                    <input type="date" id="travel-date" name="travel-date"><br><br>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Package Selection</legend>
+                    <label for="package">Select Package:</label>
+                    <select id="package" name="package">
+                        <option value="Sleeper">Sleeper</option>
+                        <option value="standard">Standard</option>
+                        <option value="Semisleeper">Semisleeper</option>
+                    </select><br><br>
+                    <label for="amount">Amount:</label>
+                    <input type="text" id="amount" name="amount">
+                </fieldset><br>
+                <button type="submit">Book Now</button>
+            </fieldset>
+        </form>
+    </div>
+
+    <div class="container-5">
+        <h2>5:Recipe Page</h2>
+        <header>
+            <h3>Delicious Pasta Recipe</h3>
+        </header>
+
+        <section>
+            <h2>Ingredients</h2>
+            <p>The basic ingredients of a pizza include:</p>
+            <ul>
+                <li>flour</li>
+                <li>yeast</li>
+                <li>tomato sauce</li>
+                <li>cheese</li>
+                <li>vegetables</li>
+                <li>chicken</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Instructions</h2>
+            <article>
+                <ol>
+                    <li>Prepare the Ingredients</li>
+                    <li>Add a sauce</li>
+                    <li>Add some veggies</li>
+                    <li>Add cheese</li>
+                    <li>Spread pizza sauce evenly over the dough.</li>
+                    <li>Bake your pizza</li>
+                </ol>
+            </article>
+        </section>
+    </div>
+</body>
+
+</html>

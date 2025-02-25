@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h2{
+    margin-bottom: 10px;
+}
+fieldset
+{
+    padding: 20px;
+}
+/* ---------------------container-1------ */
+.container-1
+{
+    margin-left: 20px;
+    padding: 20px;
+}
+#textarea {
+    height: 100px;
+    width: 300px;
+}
+#fieldset{
+    width:400px;
+}
+button{
+    padding: 8px 18px;
+    background-color: rgb(158, 209, 209);
+    border: none;
+}
+/* ---------------------container-2------ */
+.container-2
+{
+    margin-left: 20px;
+    padding: 20px;
+}
+#menulist,th,td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 8px 20px;
+}
+#menucaption
+{
+    font-size: 20px;
+}
+#menulist th{
+    background-color: rgb(173, 152, 152);
+}
+
+/* -------------------------container-3--------- */
+.container-3
+{
+    margin-left: 20px;
+    padding: 20px;
+}
+#contact-form {
+    display: table;
+}
+
+#contact-form p {
+    display: table-row;
+}
+
+#contact-form label {
+    display: table-cell;
+}
+
+#contact-form input {
+    display: table-cell;
+}
+
+/* -----------------------------container-4---- */
+.container-4
+{
+    margin-left: 20px;
+    padding: 20px;
+}
+#travelform{
+    width:500px;
+    padding:8px 12px;
+}
+#Bookform legend
+{
+font-size: 20px;
+font-weight: bold;
+}
+h3{
+    color: gray;
+}
+/* -------------------------container-5---- */
+.container-5
+{
+    margin-left: 20px;
+    padding: 20px;
+}
