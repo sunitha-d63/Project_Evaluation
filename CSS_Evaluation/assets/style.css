@@ -1,0 +1,434 @@
+* {
+    box-sizing: border-box;
+}
+
+h2 {
+    color: #3194b3;
+}
+
+/* ----------------------------------Header stick */
+.nav {
+    width: 100%;
+    height: 50px;
+    background-color: rgb(190, 182, 226);
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+}
+
+.menu {
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+}
+
+.menu>li {
+    margin: 0px 15px;
+}
+
+.menu>li>a {
+    text-decoration: none;
+    color: rgb(40, 112, 117);
+    letter-spacing: 1px;
+}
+
+.dropdown {
+    padding: 0;
+    list-style-type: none;
+    width: 160px;
+    background-color: white;
+    position: absolute;
+    visibility: hidden;
+}
+
+.dropdown a {
+    text-decoration: none;
+    color: rgb(27, 199, 211);
+    display: block;
+    padding: 12px;
+}
+
+.dropdown a:hover {
+    color: rgb(27, 199, 211);
+    background-color: rgb(190, 182, 226);
+}
+
+.sub-list:hover>.dropdown {
+    visibility: visible;
+}
+
+/* -------------------------------------------Radio-btn */
+.Radio-btn-container {
+    margin-top: 50px;
+    margin-left: 20px;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.radio-type {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    cursor: pointer;
+    position: relative;
+    padding-left: 30px;
+}
+
+.custom-radio {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid rgb(87, 119, 129);
+    background: white;
+    transition: all 0.3s ease;
+}
+
+input[type="radio"]:checked+.custom-radio {
+    background: rgb(87, 119, 129);
+    border: 5px solid white;
+    box-shadow: 0 0 0 2px rgb(87, 119, 129);
+}
+
+/* ----------------------------------------Mask IMAGE */
+.MaskImage {
+    margin-top: 50px;
+    margin-left: 20px;
+    border: 1px solid rgb(25, 92, 146);
+    width: 50%;
+    padding: 10px 20px;
+}
+
+.maskimage {
+
+    mask-image: url('/assets/image/image\ \(1\).png');
+    mask-repeat: no-repeat;
+}
+
+/* ------------------------------------------floating */
+.container-float {
+    width: 300px;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+.floating-label-content {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.floating-label {
+    color: #1e4c82;
+    font-size: 13px;
+    font-weight: normal;
+    position: absolute;
+    left: 15px;
+    top: 11px;
+    padding: 0 5px;
+    background: white;
+    transition: 0.2s ease all;
+}
+
+.floating-input {
+    font-size: 12px;
+    display: block;
+    width: 100%;
+    height: 36px;
+    padding: 0 20px;
+    background: white;
+    color: rgb(148, 133, 133);
+    border: 1px solid rgb(49, 151, 185);
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.floating-input:focus {
+    outline: none;
+
+    ~.floating-label {
+        top: -10px;
+        font-size: 20px;
+    }
+}
+
+/* ------------------------CARD--------- */
+.card-container {
+    margin-left: 20px;
+}
+
+.card {
+    position: relative;
+    width: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    transform: scale(0);
+    animation: zoom-in 1s ease forwards;
+    padding: 20px;
+    border: 1px solid blue;
+}
+
+@keyframes zoom-in {
+    100% {
+        transform: scale(1);
+    }
+}
+
+.card:hover {
+    transform: scale(1.05) rotate(2deg);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transform: scale(1.05);
+    transition: transform .5s;
+}
+
+.card img:hover {
+    opacity: 0.5;
+    transform: scale(1.2);
+}
+
+.card-content {
+    padding: 15px;
+    text-align: center;
+    background: white;
+}
+
+.card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #3194b3;
+}
+
+.card p {
+    font-size: 14px;
+    color: rgb(163, 155, 155);
+    margin-bottom: 15px;
+}
+
+.button {
+    display: inline-block;
+    padding: 8px 16px;
+    font-size: 14px;
+    color: white;
+    background: rgb(88, 93, 119);
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background: gray;
+    transform: scale(1.2);
+}
+
+/* ---------------------------Gradient Border-------- */
+
+.gradient-border-container {
+    margin-left: 20px;
+    width: 400px;
+    border-width: 4px;
+    border-style: solid;
+    border-image: linear-gradient(to right,rgb(70, 180, 199), rgb(112, 25, 146)) 1;
+}
+
+/* -------------------------Horizontal Scrolling----------- */
+.horixontal-scroll {
+    margin-left: 20px;
+}
+
+.horizontal-container {
+    width: 80%;
+    margin: auto;
+}
+
+.horizontal-container img {
+    width: 300px;
+    height: 100px;
+}
+
+.items {
+    min-width: 110px;
+    height: 110px;
+    line-height: 110px;
+    background-color: #ddd;
+}
+
+.horizontal-container {
+    max-height: 120px;
+    border: 1px solid rgb(160, 54, 54);
+    display: flex;
+    gap: 5px;
+    overflow-x: auto;
+}
+
+/* -------------------------------Image Gallery--------- */
+.image-gallery {
+    margin-top: 40px;
+}
+
+.image-gallery h2 {
+    margin-left: 20px;
+}
+
+.Gallery-grid-container {
+    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-auto-rows: 200px;
+    gap: 5px;
+    padding: 10px;
+    margin: auto;
+
+}
+
+.Gallery-grid-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.Gallery-grid-container img:hover {
+    opacity: 0.5;
+    transform: scale(1.2);
+}
+
+.b1 {
+    grid-column: span 2;
+}
+
+.b2 {
+    grid-column: span 3;
+}
+
+.b3 {
+    grid-column: span 1;
+}
+
+.b4 {
+    grid-column: span 2;
+}
+
+.b5 {
+    grid-column: span 2;
+}
+
+/* ----------------------------Progress bar----- */
+
+.progress-container {
+    width: 80%;
+    background: rgb(221, 218, 212);
+    border-radius: 20px;
+    padding: 5px;
+    overflow: hidden;
+    margin-top: 50px;
+    margin-left: 20px;
+}
+
+.progress-bar {
+    width: 0%;
+    height: 20px;
+    background: linear-gradient(90deg, blue, red);
+    border-radius: 20px;
+    animation: load 3s linear forwards;
+}
+
+@keyframes load {
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+/* <!-- -------------------------------------------Dropdown Menu-- --> */
+.animation-dropdown {
+    margin: auto;
+    width: 80%;
+}
+
+.logo {
+    color: rgb(60, 103, 153);
+    font-style: italic;
+}
+
+
+.nav-animation {
+    width: 100%;
+    height: 70px;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(49, 148, 179, 1) 89%, rgba(0, 212, 255, 1) 100%);
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.nav-menu {
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.nav-menu>li {
+    margin: 0px 15px;
+}
+
+.nav-menu>li>a {
+    text-decoration: none;
+    color: rgb(207, 211, 216);
+    letter-spacing: 1px;
+}
+
+.drop-down {
+    padding: 0;
+    list-style-type: none;
+    width: 160px;
+    background-color: #090979;
+    position: absolute;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
+}
+
+.drop-down a {
+    text-decoration: none;
+    color: rgb(94, 148, 211);
+    display: block;
+    padding: 12px;
+    transition: 0.3s;
+}
+
+.drop-down a:hover {
+    color: rgb(94, 148, 211);
+    background-color: rgb(197, 203, 204);
+}
+
+.sub-list:hover>.drop-down {
+    visibility: visible;
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.sub-list {
+    position: relative;
+}
+
+.sub-menu {
+    left: 160px;
+    top: 0;
+}
