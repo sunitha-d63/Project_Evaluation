@@ -108,7 +108,7 @@ input[type="radio"]:checked+.custom-radio {
 
 .maskimage {
 
-    mask-image: url('../assets/image/image\ \(1\).png');
+    mask-image: url('./image/image\ \(1\).png');
     mask-repeat: no-repeat;
 }
 
