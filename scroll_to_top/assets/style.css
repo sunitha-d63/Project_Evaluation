@@ -1,0 +1,42 @@
+*
+{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+section
+{
+    width:100%;
+    height:100vh;
+    background-color: rgb(231, 204, 204);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    font-size: 100px;
+}
+section:nth-child(even){
+    background-color: black;
+    color: white;
+}
+p{
+    font-size: 20px;
+}
+.scrollTop
+{
+    position: fixed;
+    bottom:30px;
+    right:30px;
+    padding:10px 15px;
+    background-color: black;
+    color:rgb(163, 157, 144);
+    border-radius: 5px;
+    border-radius: 1px solid #fff;
+    transition: all .4s;
+}
+.scrollTop:hover{
+    background-color: aliceblue;
+    color: black;
+} 
+
