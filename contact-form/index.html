@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    
+    <div class="container">
+        <form id="form" action="/">
+            <h1>Contact Form</h1>
+            <div class="input-group">
+                <label for="username">Username</label>
+                <input id="username" name="username" type="text">
+                <div id="name_error" class="error"></div>
+            </div>
+            <div class="input-group">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="text">
+                <div id="email_error" class="error"></div>
+            </div>
+            <div class="input-group">
+                <label for="address">address</label>
+                <input id="address"  name="address" type="address">
+                <div id="address_error" class="error"></div>
+            </div>
+            <div class="input-group">
+            <label for="subject">Subject</label>
+            <textarea id="subject" name="subject" placeholder="Message"></textarea>
+            <div id="subject_error" class="error"></div>
+        </div>
+            <button type="submit">submit</button>
+        </form>
+    </div>
+
+    <script src="assets/script.js"></script>
+</body>
+</html>
